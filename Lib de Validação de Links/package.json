@@ -1,0 +1,35 @@
+{
+  "name": "validate-link",
+  "version": "1.0.0",
+  "description": "This is a module to validate links",
+  "main": "./cli.js",
+  "type": "module",
+  "bin": {
+    "<validate-link>": "./cli.js"
+  },
+  "preferGlobal": true,
+    "scripts": {
+    "test": "jest ./test",
+    "cli": "node ./src/cli.js ./files/text.md",
+    "cli:validate": "node ./src/cli.js ./files/text.md --validate"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lucassmaniotto/curso-js-alura/NodeJS/validate-link.git"
+  },
+  "keywords": ["markdown", "URL"],
+  "author": "Lucas Smaniotto <lucas91755@gmail.com> (https://cc.uffs.edu.br/pessoa/lucas.schuch/)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lucassmaniotto/curso-js-alura/issues",
+    "email": "lucas91755@gmail.com"
+  },
+  "homepage": "https://github.com/lucassmaniotto",
+  "dependencies": {
+    "chalk": "5.0.1",
+    "node-fetch": "^2.6.1"
+  },
+  "devDependencies": {
+    "jest": "^27.0.6"
+  }
+}
