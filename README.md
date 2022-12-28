@@ -5,7 +5,7 @@ Este repositório possui todos projetos e cursos feitos por mim em Node.js
 ### Formação disponível em: [Alura](https://cursos.alura.com.br/formacao-javascript-front-end)
 1. Requisições e formulários
     1. [JavaScript: criando requisições](https://cursos.alura.com.br/course/javascript-criando-requisicoes)
-       1. Simulando uma API
+       1. Simulando uma API com JSON Server
 
 ## JavaScript para Back-end
 ### Formação disponível em: [Alura](https://cursos.alura.com.br/formacao-js-backend)
