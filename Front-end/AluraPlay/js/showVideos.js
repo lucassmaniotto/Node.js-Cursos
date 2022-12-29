@@ -1,10 +1,10 @@
-import { apiConection } from "./apiConetion";
+import { apiConection } from "./apiConection.js";
 
 const list = document.querySelector('[data-list]');
 
 function buildCard(title, description, url, image) {
     const video = document.createElement('li');
-    video.classList = "videos__item";
+    video.className = "videos__item";
     video.innerHTML = `
     <iframe width="100%" height="72%" src="${url}"
         title="${title}" frameborder="0"
@@ -15,8 +15,8 @@ function buildCard(title, description, url, image) {
         <img src="${image}" alt="logo canal alura">
         <h3>${title}</h3>
         <p>${description}</p>
-    </div>
-    `
+    </div>`
+
     return video;
 }
 

@@ -62,6 +62,27 @@
       "url": "https://www.youtube.com/embed/z43rcfjXOxU",
       "imagem": "https://purr.objects-us-east-1.dream.io/i/OoNx6.jpg",
       "id": 9
+    },
+    {
+      "titulo": "Logs no Android: boas práticas para otimização e aplicação | #AluraMais",
+      "descricao": "2 mil visualizações",
+      "url": "https://www.youtube.com/embed/viRW15_qUZw",
+      "imagem": "https://purr.objects-us-east-1.dream.io/i/OoNx6.jpg",
+      "id": 10
+    },
+    {
+      "titulo": "Conhecendo NestJS | #AluraMais",
+      "descricao": "5 mil visualizações",
+      "url": "https://www.youtube.com/embed/YHpG6t91oW8",
+      "imagem": "https://purr.objects-us-east-1.dream.io/i/OoNx6.jpg",
+      "id": 11
+    },
+    {
+      "titulo": "Logs no Android: boas práticas para otimização e aplicação | #AluraMais",
+      "descricao": "2 mil visualizações",
+      "url": "https://www.youtube.com/embed/viRW15_qUZw",
+      "imagem": "https://purr.objects-us-east-1.dream.io/i/OoNx6.jpg",
+      "id": 12
     }
   ]
 }
