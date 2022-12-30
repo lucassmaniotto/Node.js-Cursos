@@ -14,6 +14,11 @@ async function searchVideo(event, dataSearch) {
     search.forEach(element => list.appendChild(
         buildCard(element.titulo, element.descricao, element.url, element.imagem
     )));
+
+    if(search.length === 0) {
+        list.className = "videos__container--error"
+        list.innerHTML = `<h2 class="mensagem__error">Não existem vídeos com este termo</h2>`;
+    }
 }
 
 searchButton.addEventListener('click', event => searchVideo(event, searchInput.value));

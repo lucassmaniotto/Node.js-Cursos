@@ -30,14 +30,12 @@ body {
     top: 0;
     height: 80px;
     width: 100%;
-    padding: 0 25px;
     z-index: 2;
 }
 
 .logo {
-    background-image: url(../img/cabecalho/Logo.png);
-    background-repeat: no-repeat;
-    padding: 15px 65px;
+    width: 134px;
+    height: 34px;
     cursor: pointer;
 }
 
@@ -73,13 +71,23 @@ body {
     font-size: 21px;
 }
 
+.mensagem__error{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--azul-medio);
+    font-weight: bold;
+    font-size: 21px;
+    width: 100%;
+    height: 100vh;
+}
+
 .pesquisar__input {
-    width: 260px;
+    width: 500px;
     height: 32px;
     border: 1px solid rgb(211, 211, 211);
     font-size: 16px;
-    padding: 3px 8px;
-    border: 1px solid rgb(211, 211, 211);
+    padding: 0px 10px;
     color: var(--azul-escuro);
 }
 
@@ -94,15 +102,51 @@ body {
     cursor: pointer;
 }
 
+.cabecalho__logo{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    height: 100%;
+}
+
+.cabecalho__icones {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
 .cabecalho__pesquisar {
     display: flex;
     justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
 }
 
-@media(min-width: 834px) {
+@media(max-width: 834px) {
 
     body {
         height: 100vh;
     }
 
+    .logo {
+        width: 87,1px;
+        height: 22,1px;
+        cursor: pointer;
+    }
+
+    .cabecalho__videos {
+        width: auto;
+        height: auto;
+    }
+
+    .pesquisar__input {
+        width: 100%;
+        height: 32px;
+        border: 1px solid rgb(211, 211, 211);
+        font-size: 16px;
+        padding: 0px 10px;
+        color: var(--azul-escuro);
+    }
 }

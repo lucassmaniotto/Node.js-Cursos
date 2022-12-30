@@ -1,13 +1,12 @@
 /* Aula 1 */
 .cabecalho {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "logo pesquisar botao";
+    padding: 16px 16px;
+    border-bottom: 1px solid rgb(211, 211, 211);
 }
-
-
-
-
 
 
 /* SEÇÃO VÍDEOS */
@@ -18,6 +17,12 @@
     gap: 10px;
     z-index: 1;
     padding: 153px 20px 10px 20px;
+}
+
+.videos__container--error{
+    flex-wrap: wrap;
+    gap: 10px;
+    z-index: 1;
 }
 
 .videos__item {
@@ -37,10 +42,6 @@
     grid-template-columns: auto 1fr;
 }
 
-.descricao-video img {
-    grid-area: 1 / 1 / 3 / 2;
-}
-
 .descricao-video h3 {
     grid-area: 1 / 2 / 2 / 3;
     font-weight: 700;
@@ -54,6 +55,7 @@
 }
 
 .descricao-video img {
+    grid-area: 1 / 1 / 3 / 2;
     width: 2em;
     height: 2em;
     border-radius: 100%;

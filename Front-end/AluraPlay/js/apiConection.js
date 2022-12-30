@@ -18,6 +18,9 @@ async function createVideo(title, description, url, image) {
         })
     });
 
+    if(!response.ok) {
+        throw new Error('Não foi possível cadastrar o vídeo');
+    }
     const video = await response.json();
     return video;
 }
