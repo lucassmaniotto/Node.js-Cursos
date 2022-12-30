@@ -9,6 +9,7 @@ Este repositório possui todos projetos e cursos feitos por mim em Node.js
        2. Exibindo dados da API
        3. Criando elementos HTML com método POST
        4. Filtrando elementos com método GET e query string
+       5. Tratamento de erros
 
 ## JavaScript para Back-end
 ### Formação disponível em: [Alura](https://cursos.alura.com.br/formacao-js-backend)
