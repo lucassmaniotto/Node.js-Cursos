@@ -19,3 +19,13 @@ Este repositório possui todos projetos e cursos feitos por mim em Node.js
       2. Carregamento de arquivos
       3. Captura de links
       4. Validação de links
+
+## Curso de JavaScript e TypeScript do básico ao avançado
+
+### Curso disponível em: [Udemy](https://www.udemy.com/course/curso-de-javascript-moderno-do-basico-ao-avancado/)
+1. JavaScript Tooling e ES6 Modules
+   1. Babel
+   2. Webpack (Boilerplate)
+   3. ES6 Modules
+   4. CoreJS
+   5. Regenerator Runtime

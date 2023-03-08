@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 121</title>
+</head>
+<body>
+    <section class="container">
+        <h1>Gerador de Senhas</h1>
+        <div class="content">
+            <h2 class="password">Selecione as opções:</h2>
+            <div class="content__char">
+                <p>Quantidade de caracteres: </p>
+                <input type="number" class="quantity" min="1" max="25" value="8">
+            </div>
+            <div class="content__addons">
+                <h3>Adições:</h3>
+                <div>
+                    <label class="label" for="uppercase">Letras maiúsculas
+                        <input type="checkbox" class="uppercase">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+                <div>
+                    <label class="label" for="lowercase">Letras minúsculas
+                        <input type="checkbox" class="lowercase">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+                <div>
+                    <label class="label" for="numbers">Números
+                        <input type="checkbox" class="numbers">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+                <div>
+                    <label class="label" for="symbols">Símbolos
+                        <input type="checkbox" class="symbols">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+                <button class="btn">Gerar senha</button>
+            </div>
+        </div>
+    </section>
+    <script src="./assets/js/bundle.js"></script>
+</body>
+</html>
