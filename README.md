@@ -29,3 +29,5 @@ Este repositório possui todos projetos e cursos feitos por mim em Node.js
    3. ES6 Modules
    4. CoreJS
    5. Regenerator Runtime
+2. Node.js, NPM, Express e MongoDB
+   1. Módulos
