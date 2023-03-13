@@ -34,4 +34,5 @@ Este repositório possui todos projetos e cursos feitos por mim em Node.js
    2. NPM e Versionamento
    3. File System e Recursão Mútua
    4. Express
-      1. Instrodução
+      1. Introdução
+      2. Nodemon
