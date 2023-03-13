@@ -31,3 +31,7 @@ Este repositório possui todos projetos e cursos feitos por mim em Node.js
    5. Regenerator Runtime
 2. Node.js, NPM, Express e MongoDB
    1. Módulos
+   2. NPM e Versionamento
+   3. File System e Recursão Mútua
+   4. Express
+      1. Instrodução

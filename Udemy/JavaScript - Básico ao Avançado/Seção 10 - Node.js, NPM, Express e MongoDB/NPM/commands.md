@@ -1,0 +1,18 @@
+- npm init: Inicializa o projeto
+- npm init -y: Inicializa o projeto com as configurações padrões
+- npm install: Instala as dependências do projeto
+- npm install xxx: Instala a dependência xxx
+- npm install xxx -E: Instala a dependência xxx na versão exata e não pode ser atualizada
+- npm install xxx@versão: Instala a dependência xxx na versão especificada e pode ser atualizada
+- npm install xxx --save: Instala a dependência xxx e adiciona no package.json
+- npm install xxx --save-dev: Instala a dependência xxx e adiciona no package.json como dependência de desenvolvimento
+- npm install xxx -save-prod: Instala a dependência xxx e adiciona no package.json como dependência de produção
+- npm update: Atualiza as dependências do projeto
+- npm outdated: Verifica se existe alguma dependência desatualizada
+- npm ls: Lista as dependências do projeto
+- npm ls --depth=0: Lista as dependências do projeto sem as sub-dependências
+- npm ls --depth=x: Lista as dependências do projeto com as sub-dependências até a profundidade x
+- npm uninstall xxx: Remove a dependência xxx
+- npm uninstall xxx --save: Remove a dependência xxx e remove do package.json
+- npm uninstall xxx --save-dev: Remove a dependência xxx e remove do package.json como dependência de desenvolvimento
+- npm uninstall xxx --save-prod: Remove a dependência xxx e remove do package.json como dependência de produção
