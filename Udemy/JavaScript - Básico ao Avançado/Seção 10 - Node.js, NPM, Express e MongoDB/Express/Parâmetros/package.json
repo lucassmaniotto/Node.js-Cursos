@@ -1,10 +1,10 @@
 {
   "name": "express",
   "version": "1.0.0",
-  "description": "aula 131",
+  "description": "aula 132",
   "main": "server.js",
   "scripts": {
-    "start": "nodemon"
+    "start": "nodemon server.js"
   },
   "keywords": [],
   "author": "Lucas Smaniotto",
