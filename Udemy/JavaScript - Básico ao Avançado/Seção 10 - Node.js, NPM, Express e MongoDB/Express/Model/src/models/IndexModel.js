@@ -17,4 +17,6 @@ const IndexSchema = new mongoose.Schema({
 
 const IndexModel = mongoose.model('Index', IndexSchema);
 
-module.exports = IndexModel;
+class Index {}
+
+module.exports = Index;
