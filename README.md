@@ -40,3 +40,4 @@ Este repositório possui todos projetos e cursos feitos por mim em Node.js
       4. Router e Controllers
       5. Views
       6. Arquivos Estáticos
+      7. Webpack
