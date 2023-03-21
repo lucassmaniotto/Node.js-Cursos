@@ -1,0 +1,12 @@
+<%- include('includes/head') %>
+    <section class="container">
+        <h1>Formulário</h1>
+        <form action="/" method="post">
+            <input type="hidden" name="_csrf" value="<%= csrfToken %>">
+            <input type="text" name="name" id="name" placeholder="Name">
+            <input type="text" name="email" id="email" placeholder="Email">
+            <input type="text" name="phone" id="phone" placeholder="Phone">
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+<%- include('includes/footer') %>
