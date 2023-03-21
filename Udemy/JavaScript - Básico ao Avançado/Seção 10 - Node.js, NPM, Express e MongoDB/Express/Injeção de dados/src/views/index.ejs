@@ -1,0 +1,28 @@
+<%- includes('includes/head') %>
+
+    <section class="container">
+        <h1>
+            <% if (name) { %>
+                Olá, <%= name %>!
+            <% } else { %>
+                Hello World!
+            <% } %>
+        </h1>
+
+        <form action="/" method="post">
+            <input type="text" name="name" id="name" placeholder="Name">
+            <input type="text" name="email" id="email" placeholder="Email">
+            <input type="text" name="phone" id="phone" placeholder="Phone">
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+
+<%- includes('includes/footer') %>
+
+<!-- 
+    <%#  => Controle de fluxo (if, else, for, while, etc)
+    <%#= => Imprime o valor de uma variável
+    <%#- => Imprime o valor de uma variável sem escapar os caracteres especiais
+    <%#- include('includes/head') => Inclui o conteúdo de um arquivo
+    <%#- include('includes/head', {name: 'John'}) => Inclui o conteúdo de um arquivo e passa parâmetros
+ -->
