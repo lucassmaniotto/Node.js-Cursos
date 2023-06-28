@@ -46,3 +46,7 @@ Este repositório possui todos projetos e cursos feitos por mim em Node.js
       10. Sessions e Flash Messages
       11. Injeção de Dados com EJS
       12. Helmet e CSRF
+3. API REST
+   1. Introdução a Banco de Dados Relacionais, Docker e Insomnia
+   2. Estrutura de Projeto
+   3. Sequelize

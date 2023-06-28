@@ -1,6 +1,15 @@
+import Movie from '../models/Movie';
+
 class Home {
-  index(req, res) {
-    res.status(200).json({ message: 'Hello World' });
+  async index(req, res) {
+    const movies = await Movie.create({
+      title: 'The Shining',
+      director: 'Stanley Kubrick',
+      genre: 'Horror',
+      release_year: 1980,
+      synopsis: 'A family heads to an isolated hotel for the winter where a sinister presence influences the father into violence, while his psychic son sees horrific forebodings from both past and future.',
+    });
+    res.status(200).json(movies);
   }
 }
 
