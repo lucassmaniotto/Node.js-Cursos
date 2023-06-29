@@ -4,7 +4,8 @@ class UserController {
   async create(req, res) {
     try {
       const user = await User.create(req.body);
-      return res.status(200).json(user);
+      const { id, name, email } = user;
+      return res.status(200).json({ id, name, email });
     } catch (error) {
       return res.status(400).json({
         errors: error.errors.map((err) => ({
@@ -17,7 +18,7 @@ class UserController {
 
   async index(req, res) {
     try {
-      const users = await User.findAll();
+      const users = await User.findAll({ attributes: ['id', 'name', 'email'] });
       if (!users) return res.json({ message: 'Users were not found' });
       return res.status(200).json(users);
     } catch (error) {
@@ -28,8 +29,9 @@ class UserController {
   async show(req, res) {
     try {
       const user = await User.findByPk(req.params.id);
+      const { id, name, email } = user;
       if (!user) return res.json({ message: 'User not found' });
-      return res.status(200).json(user);
+      return res.status(200).json({ id, name, email });
     } catch (error) {
       return res.json({ message: 'User not found' });
     }
@@ -37,19 +39,15 @@ class UserController {
 
   async update(req, res) {
     try {
-      if (!req.params.id) {
-        return res.status(400).json({
-          errors: ['ID not provided'],
-        });
-      }
-      const user = await User.findByPk(req.params.id);
+      const user = await User.findByPk(req.userId);
       if (!user) {
         return res.status(400).json({
           errors: ['User not found'],
         });
       }
       const newUser = await user.update(req.body);
-      return res.status(200).json(newUser);
+      const { id, name, email } = newUser;
+      return res.status(200).json({ id, name, email });
     } catch (error) {
       return res.status(400).json({
         errors: error.errors.map((err) => ({
@@ -62,12 +60,7 @@ class UserController {
 
   async delete(req, res) {
     try {
-      if (!req.params.id) {
-        return res.status(400).json({
-          errors: ['ID not provided'],
-        });
-      }
-      const user = await User.findByPk(req.params.id);
+      const user = await User.findByPk(req.userId);
       if (!user) {
         return res.status(400).json({
           errors: ['User not found'],
