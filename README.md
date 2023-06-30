@@ -50,3 +50,10 @@ Este repositório possui todos projetos e cursos feitos por mim em Node.js
    1. Introdução a Banco de Dados Relacionais, Docker e Insomnia
    2. Estrutura de Projeto
    3. Sequelize
+   4. CRUD
+   5. Criptografia de senhas com Bcrypt
+   6. JWT, autenticação, autorização e verificações de segurança
+   7. Seeds
+   8. Upload de Arquivos
+   9. Arquivos Estáticos
+   10. Deploy de API REST
