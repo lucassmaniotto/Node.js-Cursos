@@ -11,9 +11,12 @@ module.exports = {
       type: Sequelize.STRING(100),
       unique: true,
     },
-    director: {
+    director_id: {
+      type: Sequelize.INTEGER,
+      references: { model: 'users', key: 'id' },
+      onUpdate: 'CASCADE',
+      onDelete: 'CASCADE',
       allowNull: false,
-      type: Sequelize.STRING(100),
     },
     genre: {
       allowNull: true,
