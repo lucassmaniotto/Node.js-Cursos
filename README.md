@@ -54,6 +54,6 @@ Este repositório possui todos projetos e cursos feitos por mim em Node.js
    5. Criptografia de senhas com Bcrypt
    6. JWT, autenticação, autorização e verificações de segurança
    7. Seeds
-   8. Upload de Arquivos
+   8. Multer - Upload de imagens
    9. Arquivos Estáticos
    10. Deploy de API REST
