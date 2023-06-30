@@ -18,7 +18,7 @@ export default async (req, res, next) => {
     const user = await User.findOne({ where: { id, email } });
     if (!user) {
       return res.status(401).json({
-        errors: ['Invalid user'],
+        errors: ['Invalid user, please login again'],
       });
     }
     req.userId = id;

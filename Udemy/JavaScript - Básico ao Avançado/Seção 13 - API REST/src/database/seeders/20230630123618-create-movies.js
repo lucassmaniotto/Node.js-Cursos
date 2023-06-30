@@ -106,7 +106,7 @@ module.exports = {
         director: 'Peter Jackson',
         genre: 'Fantasy',
         release_year: 2003,
-        synopsis: 'The final confrontation between the forces of good and evil as they fight for control of Middle Earth\'s future approaches. Sauron plans a major attack on Minas Tirith, the capital of Gondor, which causes Gandalf and Pippin to go there with the intention of helping the resistance.',
+        synopsis: 'The final confrontation between the forces of good and evil as they fight for control of Middle Earth\'s future approaches. Sauron plans a major attack on Tirith Mines, the capital of Gondor, which causes Gandalf and Pippin to go there with the intention of helping the resistance.',
         created_at: new Date(),
         updated_at: new Date(),
       },

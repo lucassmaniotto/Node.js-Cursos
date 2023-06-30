@@ -50,10 +50,7 @@ class UserController {
       return res.status(200).json({ id, name, email });
     } catch (error) {
       return res.status(400).json({
-        errors: error.errors.map((err) => ({
-          field: err.path,
-          message: err.message,
-        })),
+        errors: error.errors.map((err) => err.message),
       });
     }
   }
@@ -67,13 +64,14 @@ class UserController {
         });
       }
       await user.destroy();
-      return res.status(200).json({ message: 'User deleted' });
+      return res.status(200).json({
+        deleted: true,
+        message: 'User deleted',
+      });
     } catch (error) {
       return res.status(400).json({
-        errors: error.errors.map((err) => ({
-          field: err.path,
-          message: err.message,
-        })),
+        deleted: false,
+        errors: error.errors.map((err) => err.message),
       });
     }
   }
