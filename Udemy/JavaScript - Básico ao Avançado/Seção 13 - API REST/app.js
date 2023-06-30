@@ -3,6 +3,7 @@ import express from 'express';
 import homeRoutes from './src/routes/home';
 import userRoutes from './src/routes/user';
 import tokenRoutes from './src/routes/token';
+import movieRoutes from './src/routes/movie';
 import './src/database';
 
 dotenv.config();
@@ -23,6 +24,7 @@ class App {
     this.app.use('/', homeRoutes);
     this.app.use('/users/', userRoutes);
     this.app.use('/token/', tokenRoutes);
+    this.app.use('/movies/', movieRoutes);
   }
 }
 

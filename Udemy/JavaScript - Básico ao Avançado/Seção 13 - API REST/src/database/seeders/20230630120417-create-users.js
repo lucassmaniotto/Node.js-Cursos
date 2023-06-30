@@ -12,6 +12,13 @@ module.exports = {
         updated_at: new Date(),
       },
       {
+        name: 'Ridley Scott',
+        email: 'ridley@scott.com',
+        password_hash: bcrypt.hashSync('123456', 10),
+        created_at: new Date(),
+        updated_at: new Date(),
+      },
+      {
         name: 'Shinichiro Watanabe',
         email: 'shinichiro@watanabe',
         password_hash: bcrypt.hashSync('123456', 10),
@@ -42,6 +49,20 @@ module.exports = {
       {
         name: 'Quentin Tarantino',
         email: 'quentin@tarantino.com',
+        password_hash: bcrypt.hashSync('123456', 10),
+        created_at: new Date(),
+        updated_at: new Date(),
+      },
+      {
+        name: 'David Fincher',
+        email: 'david@fincher.com',
+        password_hash: bcrypt.hashSync('123456', 10),
+        created_at: new Date(),
+        updated_at: new Date(),
+      },
+      {
+        name: 'Peter Jackson',
+        email: 'peter@jackson.com',
         password_hash: bcrypt.hashSync('123456', 10),
         created_at: new Date(),
         updated_at: new Date(),
