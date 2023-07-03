@@ -20,18 +20,6 @@ export default class Movie extends Model {
             },
           },
         },
-        /* director_id: {
-          type: Sequelize.INTEGER,
-          defaultValue: '',
-          validate: {
-            notEmpty: {
-              msg: 'The movie director id cannot be empty',
-            },
-            isInt: {
-              msg: 'The movie director id must be an integer',
-            },
-          },
-        }, */
         genre: {
           type: Sequelize.STRING,
           defaultValue: '',

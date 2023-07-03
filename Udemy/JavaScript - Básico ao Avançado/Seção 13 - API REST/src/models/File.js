@@ -1,4 +1,5 @@
 import Sequelize, { Model } from 'sequelize';
+import appConfig from '../config/appConfig';
 
 export default class File extends Model {
   static init(sequelize) {
@@ -32,6 +33,12 @@ export default class File extends Model {
             notEmpty: {
               msg: 'The file movie_id cannot be empty',
             },
+          },
+        },
+        url: {
+          type: Sequelize.VIRTUAL,
+          get() {
+            return `${appConfig.url}/images/${this.getDataValue('filename')}`;
           },
         },
       },

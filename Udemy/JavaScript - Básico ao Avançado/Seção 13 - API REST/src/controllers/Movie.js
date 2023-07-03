@@ -17,7 +17,7 @@ class MovieController {
         include: {
           model: File,
           as: 'poster',
-          attributes: ['filename'],
+          attributes: ['filename', 'url'],
         },
       });
       return res.json(movies);
@@ -45,7 +45,7 @@ class MovieController {
         include: {
           model: File,
           as: 'poster',
-          attributes: ['filename'],
+          attributes: ['filename', 'url'],
         },
       });
       if (!movie) {
