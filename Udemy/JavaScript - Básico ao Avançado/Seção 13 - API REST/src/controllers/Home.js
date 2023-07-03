@@ -1,6 +1,6 @@
 class Home {
   async index(req, res) {
-    res.send(`API running on port ${process.env.PORT} 🚀`);
+    res.send(`API running | Port: ${process.env.PORT} | URL: ${process.env.APP_URL} 🚀`);
   }
 }
 

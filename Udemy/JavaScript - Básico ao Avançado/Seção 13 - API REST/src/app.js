@@ -1,12 +1,12 @@
 import dotenv from 'dotenv';
 import express from 'express';
 import { resolve } from 'path';
-import homeRoutes from './src/routes/home';
-import userRoutes from './src/routes/user';
-import tokenRoutes from './src/routes/token';
-import movieRoutes from './src/routes/movie';
-import imageRoutes from './src/routes/file';
-import './src/database';
+import homeRoutes from './routes/home';
+import userRoutes from './routes/user';
+import tokenRoutes from './routes/token';
+import movieRoutes from './routes/movie';
+import imageRoutes from './routes/file';
+import './database';
 
 dotenv.config();
 
