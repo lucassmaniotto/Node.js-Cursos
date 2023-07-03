@@ -1,9 +1,25 @@
 import Movie from '../models/Movie';
+import File from '../models/File';
 
 class MovieController {
   async index(req, res) {
     try {
-      const movies = await Movie.findAll();
+      const movies = await Movie.findAll({
+        attributes: [
+          'id',
+          'title',
+          'director_id',
+          'genre',
+          'release_year',
+          'synopsis',
+        ],
+        order: [['id', 'DESC']],
+        include: {
+          model: File,
+          as: 'poster',
+          attributes: ['filename'],
+        },
+      });
       return res.json(movies);
     } catch (error) {
       return res.status(400).json({ error: error.message });
@@ -16,7 +32,22 @@ class MovieController {
       if (!id) {
         return res.status(400).json({ errors: ['ID not provided'] });
       }
-      const movie = await Movie.findByPk(id);
+      const movie = await Movie.findByPk(id, {
+        attributes: [
+          'id',
+          'title',
+          'director_id',
+          'genre',
+          'release_year',
+          'synopsis',
+        ],
+        order: [['id', 'DESC']],
+        include: {
+          model: File,
+          as: 'poster',
+          attributes: ['filename'],
+        },
+      });
       if (!movie) {
         return res.status(400).json({ errors: ['Movie not found'] });
       }

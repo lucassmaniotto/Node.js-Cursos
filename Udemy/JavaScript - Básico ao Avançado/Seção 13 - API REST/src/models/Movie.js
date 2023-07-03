@@ -74,6 +74,6 @@ export default class Movie extends Model {
   }
 
   static associate(models) {
-    this.hasOne(models.File, { foreignKey: 'movie_id' });
+    this.hasOne(models.File, { foreignKey: 'movie_id', as: 'poster' });
   }
 }

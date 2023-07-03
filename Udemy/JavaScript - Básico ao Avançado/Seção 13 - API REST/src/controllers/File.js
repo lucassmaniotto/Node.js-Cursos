@@ -15,7 +15,10 @@ class FileController {
         const file = await File.create({ originalname, filename, movie_id });
         return res.json(file);
       } catch (e) {
-        return res.status(400).json({ errors: e.errors.map((err) => err.message) });
+        if (e.name === 'SequelizeUniqueConstraintError') {
+          return res.status(400).json({ errors: ['File already exists'] });
+        }
+        return res.status(400).json({ errors: [e.message] });
       }
     });
   }
