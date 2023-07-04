@@ -7,12 +7,9 @@ class UserController {
       const { id, name, email } = user;
       return res.status(200).json({ id, name, email });
     } catch (error) {
-      return res.status(400).json({
-        errors: error.errors.map((err) => ({
-          field: err.path,
-          message: err.message,
-        })),
-      });
+      return res
+        .status(400)
+        .json({ error: error.message, message: 'User was not created' });
     }
   }
 
