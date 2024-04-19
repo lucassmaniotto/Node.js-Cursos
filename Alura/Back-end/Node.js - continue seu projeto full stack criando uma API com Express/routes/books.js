@@ -1,32 +1,21 @@
 const { Router } = require("express");
-const { getBooks } = require("../controllers/books");
+const {
+  getBooks,
+  getBook,
+  createBook,
+  patchBook,
+  deleteBook,
+} = require("../controllers/books");
 
 const router = Router();
 
 router.get("/", getBooks);
+router.get("/:id", getBook);
 
-router.post("/", (req, res) => {
-  try {
-    res.send("Rota POST");
-  } catch (error) {
-    res.status(500).send(error.message);
-  }
-});
+router.post("/", createBook);
 
-router.patch("/:id", (req, res) => {
-  try {
-    res.send("Rota PATCH");
-  } catch (error) {
-    res.status(500).send(error.message);
-  }
-});
+router.put("/:id", patchBook);
 
-router.delete("/:id", (req, res) => {
-  try {
-    res.send("Rota DELETE");
-  } catch (error) {
-    res.status(500).send(error.message);
-  }
-});
+router.delete("/:id", deleteBook);
 
 module.exports = router;
