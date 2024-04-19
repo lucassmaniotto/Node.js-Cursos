@@ -6,18 +6,29 @@ function getAllBooks() {
 
 function getBookById(id) {
   const books = getAllBooks();
-  return books.find((book) => book.id === id);
+  const book = books.find((book) => book.id === Number(id));
+
+  if (!book) throw new Error("Livro não encontrado");
+
+  return book;
 }
 
 function insertBook(newBook) {
   const books = getAllBooks();
+
+  if (books.find((book) => book.id === newBook.id)) {
+    throw new Error("Livro já cadastrado");
+  }
+
   books.push(newBook);
   fs.writeFileSync("./src/data/books.json", JSON.stringify(books));
 }
 
 function updateBook(id, update) {
   let books = JSON.parse(fs.readFileSync("./src/data/books.json"));
-  const index = books.findIndex((book) => book.id === id);
+  const index = books.findIndex((book) => book.id === Number(id));
+
+  if (index === -1) throw new Error("Livro não encontrado");
 
   const updatedBook = { ...books[index], ...update };
 
@@ -28,7 +39,12 @@ function updateBook(id, update) {
 
 function deleteBookById(id) {
   let books = JSON.parse(fs.readFileSync("./src/data/books.json"));
-  books = books.filter((book) => book.id !== id);
+  const index = books.findIndex((book) => book.id === Number(id));
+
+  if (index === -1) throw new Error("Livro não encontrado");
+
+  books.splice(index, 1);
+
   fs.writeFileSync("./src/data/books.json", JSON.stringify(books));
   return { message: "Livro deletado com sucesso!" };
 }

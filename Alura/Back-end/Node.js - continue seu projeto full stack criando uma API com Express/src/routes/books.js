@@ -3,7 +3,7 @@ const {
   getBooks,
   getBook,
   createBook,
-  patchBook,
+  putBook,
   deleteBook,
 } = require("../controllers/books");
 
@@ -14,7 +14,7 @@ router.get("/:id", getBook);
 
 router.post("/", createBook);
 
-router.put("/:id", patchBook);
+router.put("/:id", putBook);
 
 router.delete("/:id", deleteBook);
 
