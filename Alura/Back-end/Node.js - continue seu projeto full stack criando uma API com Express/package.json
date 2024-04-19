@@ -1,0 +1,24 @@
+{
+  "name": "alura-books-server",
+  "version": "1.0.0",
+  "description": "API Node.js para comunicação com a aplicação Alura Books",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lucassmaniotto/Node.js-Cursos.git"
+  },
+  "author": "Lucas Smaniotto",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lucassmaniotto/Node.js-Cursos/issues"
+  },
+  "homepage": "https://github.com/lucassmaniotto/Node.js-Cursos#readme",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}

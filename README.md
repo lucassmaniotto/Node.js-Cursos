@@ -20,6 +20,15 @@ Este repositório possui todos projetos e cursos feitos por mim em Node.js
       3. Captura de links
       4. Validação de links
 
+## Node.js: continue seu projeto full stack criando uma API com Express
+### Curso disponível em: [Alura](https://cursos.alura.com.br/course/node-primeira-api-express)
+1. Desenvolvendo uma página com React e API CRUD
+   1. Criando uma aplicação Node
+   2. Configurando o Express
+   3. Metodos HTTP e roteamento
+   4. Serviços
+   5. Tratamento de erros
+
 ## Curso de JavaScript e TypeScript do básico ao avançado
 
 ### Curso disponível em: [Udemy](https://www.udemy.com/course/curso-de-javascript-moderno-do-basico-ao-avancado/)
