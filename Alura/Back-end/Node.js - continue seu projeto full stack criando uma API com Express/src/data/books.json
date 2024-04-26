@@ -1,1 +1,1 @@
-[{"id":2,"name":"Livro muito legal"},{"id":3,"name":"Livro menos que demais"},{"id":4,"name":"Livro mais que demais"},{"id":1,"name":"Livro iradíssimo"}]
+[{"title":"Livro muito legal","id":2,"src":"/images/livro.png"},{"title":"Livro menos que demais","id":3,"src":"/images/livro.png"},{"title":"Livro mais que demais","id":4,"src":"/images/livro.png"},{"title":"Apache Kafka e Spring Boot","id":5,"src":"/images/livro.png"},{"title":"Livro iradíssimo","id":1,"src":"/images/livro.png"}]

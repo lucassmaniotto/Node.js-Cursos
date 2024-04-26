@@ -34,7 +34,7 @@ function createBook(req, res) {
   try {
     const newBook = req.body;
 
-    if (newBook && newBook.id && newBook.name) {
+    if (newBook && newBook.id && newBook.title) {
       if (typeof newBook.id !== "number") {
         return res.status(400).send({ message: "O campo 'id' deve ser um número" });
       }
