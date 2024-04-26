@@ -1,1 +1,46 @@
-[{"title":"Livro muito legal","id":2,"src":"/images/livro.png"},{"title":"Livro menos que demais","id":3,"src":"/images/livro.png"},{"title":"Livro mais que demais","id":4,"src":"/images/livro.png"},{"title":"Apache Kafka e Spring Boot","id":5,"src":"/images/livro.png"},{"title":"Livro iradíssimo","id":1,"src":"/images/livro.png"}]
+[
+  { "title": "Livro iradíssimo", "id": 1, "src": "/images/livro.png" },
+  { "title": "Livro muito legal", "id": 2, "src": "/images/livro.png" },
+  { "title": "Livro menos que demais", "id": 3, "src": "/images/livro.png" },
+  { "title": "Livro mais que demais", "id": 4, "src": "/images/livro.png" },
+  {
+    "title": "Entendendo algoritmos",
+    "id": 5,
+    "src": "/images/livro.png"
+  },
+  {
+    "title": "Cangaceiro Javascript",
+    "id": 6,
+    "src": "/images/livro.png"
+  },
+  {
+    "title": "Guia básico de C#",
+    "id": 7,
+    "src": "/images/livro.png"
+  },
+  {
+    "title": "Guia básico de JavaScript",
+    "id": 8,
+    "src": "/images/livro.png"
+  },
+  {
+    "title": "Código Limpo",
+    "id": 9,
+    "src": "/images/livro.png"
+  },
+  {
+    "title": "JavaScript para iniciantes",
+    "id": 10,
+    "src": "/images/livro.png"
+  },
+  {
+    "title": "Conhecendo o python",
+    "id": 11,
+    "src": "/images/livro.png"
+  },
+  {
+    "title": "Imersão Alura",
+    "id": 12,
+    "src": "/images/livro.png"
+  }
+]
