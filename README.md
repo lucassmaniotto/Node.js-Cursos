@@ -28,6 +28,13 @@ Este repositório possui todos projetos e cursos feitos por mim em Node.js
    3. Metodos HTTP e roteamento
    4. Serviços
    5. Tratamento de erros
+2. Concluindo o projeto full stack
+   1. [React e Node.js: consumindo APIs no React no projeto full stack](https://cursos.alura.com.br/course/react-node-consumindo-apis-react)
+      1. Rotas com React Router
+      2. Axios e assincronismo
+      3. useEffect
+      4. Teste de API com Insomnia/Postman
+      5. MongoDB
 
 ## Curso de JavaScript e TypeScript do básico ao avançado
 
